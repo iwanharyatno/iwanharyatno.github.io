@@ -12,6 +12,7 @@ nav {
     height: 4rem;
     display: flex;
     align-items: center;
+    z-index: 5;
 }
 nav h2 {
     color: #FFFFFF;
@@ -50,10 +51,10 @@ header::after {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(#FFFFFF00, #000000C8 80%);
-    background: -o-linear-gradient(#FFFFFF00, #000000C8 80%);
-    background: -webkit-linear-gradient(#FFFFFF00, #000000C8 80%);
-    background: -moz-linear-gradient(#FFFFFF00, #000000C8 80%);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) 80%);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) 80%);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) #000000C8 80%);
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) 80%);
     z-index: -1;
 }
 
@@ -113,7 +114,10 @@ section h2.title {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(#FFFFFF00, #000000C0 60%);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) 80%);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) 80%);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) #000000C8 80%);
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8) 80%);
     border-radius: 0.4rem;
     z-index: -1;
 }
