@@ -1,4 +1,175 @@
-html {
+body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #1F1F1F;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+nav h2 {
+    color: #FFFFFF;
+    margin-left: 1.5rem;
+}
+
+header {
+    background-image: url('img/background.jpg');
+    position: relative;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+header div {
+    text-align: center;
+}
+header img.profile-picture {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+header h1.name {
+    color: #FFFFFF;
+    margin: 1rem 0 0.5rem 0;
+}
+header span.description {
+    color: #D3D3D3;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#FFFFFF00, #000000C8 80%);
+    background: -o-linear-gradient(#FFFFFF00, #000000C8 80%);
+    background: -webkit-linear-gradient(#FFFFFF00, #000000C8 80%);
+    background: -moz-linear-gradient(#FFFFFF00, #000000C8 80%);
+    z-index: -1;
+}
+
+section {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+section h2.title {
+    text-align: center;
+}
+
+.about p {
+    line-height: 1.5rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects .card {
+    background: #000000;
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.4rem;
+    z-index: -2;
+}
+.projects .card h2 {
+    margin-top: 9rem;
+    color: #FFFFFF;
+}
+.projects .card p {
+    font-size: 0.7rem;
+    color: #FFFFFF;
+}
+.projects .card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#FFFFFF00, #000000C0 60%);
+    border-radius: 0.4rem;
+    z-index: -1;
+}
+
+.contact {
+    margin: auto;
+}
+.form-element {
+    width: calc(100% - (1.4rem + 2px));
+    height: 2rem;
+    margin: 0.7rem 0 0.7rem 0;
+    border: 1px solid #000000;
+    border-radius: 0.3rem;
+    padding: 0 0.7rem;
+}
+textarea.form-element {
+    width: calc(100% - (1.4rem + 2px));
+    height: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.7rem;
+}
+.btn-default {
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: all 0.7s ease;
+}
+.btn-default:hover {
+    background-color: #3F3F3F;
+}
+.btn-default:active {
+    background-color: #1F1F1F;
+}
+
+footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.col-* {
+    width: 100%;
+}
+
+@media screen and (min-width: 780px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66; }
+    .col-12 { width: 100%; }
+
+    .row {
+        flex-direction: row;
+    }
 }
