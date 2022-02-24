@@ -122,6 +122,25 @@ section h2.title {
     z-index: -1;
 }
 
+.info {
+    display: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid #E3E3E3;
+    margin: 1.5rem 0;
+}
+
+.info-success {
+    border: 1px solid #007D0A;
+    background-color: #00C210;
+    color: #FFFFFF;
+}
+.info-failed {
+    border: 1px solid #600000;
+    background-color: #B30000;
+    color: #FFFFFF;
+}
+
 .contact {
     margin: auto;
 }
@@ -152,6 +171,11 @@ textarea.form-element {
 }
 .btn-default:active {
     background-color: #1F1F1F;
+}
+.btn-default:disabled {
+    background-color: #9F9F9F;
+    cursor: not-allowed;
+    user-select: none;
 }
 
 footer {

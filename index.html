@@ -43,11 +43,12 @@
     <section>
         <h2 class="title">Hubungi Saya</h2>
         <div class="col-6 contact">
-            <form>
-                <input type="text" class="form-element" placeholder="Nama anda...">
-                <input type="text" class="form-element" placeholder="Alamat Email...">
-                <textarea class="form-element" placeholder="Pesan..."></textarea>
-                <button class="btn-default">Kirim</button>
+            <div class="info" id="contact-info">Pesan anda <strong>Berhasil</strong> dikirim</div>
+            <form name="contact-form">
+                <input type="text" name="name" class="form-element" placeholder="Nama anda...">
+                <input type="text" name="email" class="form-element" placeholder="Alamat Email...">
+                <textarea name="message" class="form-element" placeholder="Pesan..."></textarea>
+                <button class="btn-default" type="submit" id="submit-contact">Kirim</button>
             </form>
         </div>
     </section>
